@@ -54,7 +54,6 @@ body{
 }
 .discover-program .content .block-btn .btn-perry:hover{
   color: #fff;
-  background-color: #118386;
 }
 .our-programs .left-side{
   width:65%;
@@ -133,7 +132,7 @@ body{
   border-radius: inherit;
   left: -28px;
   top: -33px;
-  padding: 15px 45px 15px 31px;
+  padding: 20px 45px 15px 31px;
   font-weight: 400;
 }
 .news-block .news .item{
@@ -157,13 +156,14 @@ body{
   margin-bottom: 12px;
 }
 .news-block .news .item .read-more a{
-  color: #17afb3;
+  color: #8db73b;
+
   text-decoration: none;
   font-size: 16px;
   text-transform: uppercase;
 }
 .news-block .news .item .read-more a:hover{
-  color: #8db73b;
+  color: #008387;
 }
 .video-text-block{
   margin-bottom: 30px;
@@ -238,11 +238,15 @@ body{
   color: #52523c;
   height: 32px;
   border-radius: inherit;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.video-text-block .newsletter-form .form-control:focus{
+  background: #fff;
 }
 .video-text-block .newsletter-form .btn-perry{
   height: 32px;
   font-size: 16px;
-  background-color: #443a4c;
+  background-color: #6f5e7a;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -285,7 +289,7 @@ body{
   height:45px;
   margin:0 auto 10px ;
 }
-.ico-link-block .item .link a{
+.ico-link-block .item a{
   font-size: 16px;
   color: #000;
   text-decoration: none;
@@ -296,42 +300,42 @@ body{
 }
 .ico-link-block .item.faculity .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: -5px;
+  background-position:0 -5px;
 }
 .ico-link-block .item.faculity:hover .ico{
   background-position: 95px -5px;
 }
 .ico-link-block .item.facility .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 269px;
+  background-position:0 269px;
 }
 .ico-link-block .item.facility:hover .ico{
   background-position: 94px 269px;
 }
 .ico-link-block .item.schedule .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 212px;
+  background-position: 0 212px;
 }
 .ico-link-block .item.schedule:hover .ico{
   background-position: 96px 212px;
 }
 .ico-link-block .item.performances .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 158px;
+  background-position: 0 158px;
 }
 .ico-link-block .item.performances:hover .ico{
   background-position: 96px 158px;
 }
 .ico-link-block .item.tuition .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 105px;
+  background-position:0 105px;
 }
 .ico-link-block .item.tuition:hover .ico{
   background-position: 95px 105px;
 }
 .ico-link-block .item.support .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 49px;
+  background-position:0  49px;
 }
 .ico-link-block .item.support:hover .ico{
   background-position: 97px 49px;
@@ -400,6 +404,7 @@ body{
 @media(max-width: 991px){
   .discover-program{
     background: #fff;
+    padding: 50px 0;
   }
   .discover-program .content{
     width: 100%;
@@ -410,6 +415,12 @@ body{
   .ico-link-block .item{
     width:calc(100%/3);
     margin-bottom: 15px;
+  }
+  .our-programs .right-side .title{
+    background-color: #52523c;
+    font-size: 24px;
+    margin-bottom: 0;
+    padding: 10px 0;
   }
   .our-programs .left-side{
     display: none;
@@ -499,6 +510,17 @@ body{
   .our-story .content{
     padding: 48px 16px 75px ;
     width: 100%;
+  }
+  .video-text-block .purple-block{
+    min-height: inherit;
+    padding: 20px;
+  }
+  .video-text-block .purple-block .title{
+    font-size: 18px;
+  }
+  .video-text-block .purple-block .lear-more a{
+    font-size: 12px;
+    color: #17afb3;
   }
   .our-story .content .text{
     font-size: 12px;

@@ -1,0 +1,140 @@
+.item-new:not(:first-child) {
+  margin-top: 45px;
+}
+
+.item-new:last-child {
+  margin-bottom: 80px;
+}
+
+article a:hover,
+article a:active,
+article a:link,
+article a:visited {
+  text-decoration: none;
+}
+
+.title{
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+article a {
+  color: #52523c;
+  font-family: "Fira Sans";
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+article a:hover {
+  color: #118386;
+}
+
+.thumbnail-block {
+  float: left;
+}
+
+.inner-block-item {
+  padding-left: 180px;
+}
+
+.meta-data {
+  padding: 9px 10px 9px 180px;
+  background-color: #f4f4f4;
+  margin-top: 3px;
+  color: #6d6d50;
+}
+
+.meta-data span {
+  float: right;
+}
+
+.meta-data,
+.meta-data a {
+  font-size: 12px;
+  text-transform: none;
+  line-height: normal;
+}
+
+.meta-data a {
+  font-family: "Open Sans";
+  color: #8db73b;
+}
+
+.meta-data a:hover {
+  color: #118386;
+  cursor: pointer;
+}
+
+.text-content {
+  max-height: 72px;
+  overflow: hidden;
+  color: #6d6d50;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.title-widget{
+  margin: 0 0 18px 0;
+  color: #009f9b;
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.widget ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.widget li{
+  margin-bottom: 18px;
+  color: #6d6d50;
+  font-size: 16px;
+  line-height: normal;
+  position: relative;
+  padding-left: 10px;
+}
+
+.widget span{
+  color: #b6b6a7;
+  font-size: 12px;
+  display: block;
+}
+
+.widget li:before{
+  position: absolute;
+  left: 0px;
+  top:5px;
+  font-family: FontAwesome;
+  content: "\f054";
+  color: #6d6d50;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 599px) {
+  .meta-data {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .thumbnail-block {
+    float: none;
+    text-align: center;
+  }
+  .text-content {
+    max-height: inherit;
+  }
+  .inner-block-item {
+    margin-top: 9px;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 359px) {
+  span.count-comments{
+    display: block;
+    float: none;
+  }
+}

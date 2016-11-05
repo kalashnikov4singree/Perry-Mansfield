@@ -28,8 +28,7 @@
   padding: 40px 10px 37px 11px;
   display: block;
 }
-.footer .footer-menu ul>li>a:hover,
-.footer .footer-menu ul>li.active>a{
+.footer .footer-menu ul>li>a:hover{
   background-color: #17afb3;
 }
 .footer .follow-us{
@@ -39,13 +38,13 @@
   text-transform: none;
 }
 .footer .follow-us a{
-  color: #fff;
+  color: rgba(255,255,255,0.8);
   text-decoration: none;
   font-size: 25px;
   margin-left: 10px;
 }
 .footer .follow-us a:hover{
-  color: rgba(255,255,255,0.8);
+  color: #fff;
 }
 .footer .all-right-reserved {
   font-size: 12px;
