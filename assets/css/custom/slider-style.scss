@@ -35,6 +35,9 @@
   color: white;
   text-decoration: none;
 }
+.main-slider .nivo-caption .read-more a:hover{
+  color: #008387;
+}
 .main-slider .nivo-controlNav{
   position: absolute;
   bottom: -42px;
@@ -84,5 +87,52 @@
 @media (max-width: 1199px){
   .main-slider .nivo-controlNav{
     width: 970px;
+  }
+}
+@media(max-width: 991px){
+  .main-slider{
+    border-bottom: 1px solid #b6b6a7;
+    padding-bottom: 24px;
+  }
+  .main-slider .nivo-caption{
+    position: relative;
+    bottom: inherit;
+    background: #fff;
+    color: #52523c;
+  }
+  .main-slider .nivo-caption .caption-content{
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    text-align: center;
+    min-height: 250px;
+    padding-bottom:0 ;
+  }
+  .main-slider .nivo-caption .title{
+    font-size: 24px;
+  }
+  .main-slider .nivo-caption .content{
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .main-slider .nivo-caption .read-more a{
+    font-size: 13px;
+  }
+  .main-slider .nivo-controlNav{
+    bottom: 230px;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .main-slider .nivoSlider img{
+    min-height: 300px;
+    object-fit: cover;
+    object-position: left;
+  }
+  .main-slider .nivo-prevNav img, .main-slider .nivo-nextNav img {
+    display: none;
+  }
+  .main-slider .nivo-caption .read-more a{
+    color: #61aeb2;
   }
 }
