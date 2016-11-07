@@ -286,7 +286,7 @@ body{
   height:45px;
   margin:0 auto 10px ;
 }
-.ico-link-block .item .link a{
+.ico-link-block .item a{
   font-size: 16px;
   color: #000;
   text-decoration: none;
@@ -297,42 +297,42 @@ body{
 }
 .ico-link-block .item.faculity .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: -5px;
+  background-position:0 -5px;
 }
 .ico-link-block .item.faculity:hover .ico{
   background-position: 95px -5px;
 }
 .ico-link-block .item.facility .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 269px;
+  background-position:0 269px;
 }
 .ico-link-block .item.facility:hover .ico{
   background-position: 94px 269px;
 }
 .ico-link-block .item.schedule .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 212px;
+  background-position: 0 212px;
 }
 .ico-link-block .item.schedule:hover .ico{
   background-position: 96px 212px;
 }
 .ico-link-block .item.performances .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 158px;
+  background-position: 0 158px;
 }
 .ico-link-block .item.performances:hover .ico{
   background-position: 96px 158px;
 }
 .ico-link-block .item.tuition .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 105px;
+  background-position:0 105px;
 }
 .ico-link-block .item.tuition:hover .ico{
   background-position: 95px 105px;
 }
 .ico-link-block .item.support .ico{
   background: url("../../assets/img/sprite-perry.png");
-  background-position-y: 49px;
+  background-position:0  49px;
 }
 .ico-link-block .item.support:hover .ico{
   background-position: 97px 49px;
