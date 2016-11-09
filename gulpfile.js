@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     //sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-clean-css'),
+    gzip = require('gulp-gzip'),
     //imagemin = require('gulp-imagemin'),
     //pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
@@ -76,10 +77,15 @@ gulp.task('style:build', function () {
         //.pipe(prefixer()) //Добавим вендорные префиксы
         .pipe(cssmin()) //Сожмем
         //.pipe(sourcemaps.write())
+        //.pipe(gzip())
         .pipe(gulp.dest(path.build.css)) //И в build
         .pipe(reload({stream: true}));
 });
-
+gulp.task('default', function () {
+    return gulp.src('./main.css')
+        .pipe(csso())
+        .pipe(gulp.dest('./out'));
+});
 gulp.task('build', [
     'html:build',
     'js:build',

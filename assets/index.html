@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head lang="ru">
+<html lang="en">
+<head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Main Page Perry Mansfield</title>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="read-more">
                             <a href="#">
-                                Read More
+                                Lean More
                             </a>
                         </div>
                     </div>
@@ -284,7 +284,7 @@
                         </div>
                     </div>
                     <div class="form-block inline-block">
-                        <form action="">
+                        <form>
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Your Name">
                             </div>
@@ -373,7 +373,7 @@
             <div class="title">
                 Contact Us
             </div>
-            <form action="">
+            <form>
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Full Name">
                 </div>
@@ -393,47 +393,4 @@
 
 //= template/footer.html
 </body>
-<script src="build/js/main.js"></script>
-<script>
-    $('#slider').nivoSlider({
-        effect:'sliceDown',
-        prevText: '<img src="assets/img/arrow-left.png">',
-        nextText: '<img src="assets/img/arrow-right.png">',
-        controlNavThumbs:true,
-        pauseTime:50000,
-        afterChange: function(){
-            $('.caption-animate').removeClass('fadeIn');
-            $('.caption-animate').addClass('fadeInRight');
-        }
-    });
-    var carousel = $('.owl-carousel');
-    carousel.owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        items:1,
-        margin:30,
-        smartSpeed:450
-    });
-    $(".danceTab").hover(function(e){
-        e.preventDefault();
-        carousel.trigger('to.owl.carousel', 0);
-    });
-    $(".theatreTab").hover(function(e){
-        e.preventDefault();
-        carousel.trigger('to.owl.carousel', 1);
-    });
-    $(".emergingTab").hover(function(e){
-        e.preventDefault();
-        carousel.trigger('to.owl.carousel', 2);
-    });
-    $(".discoveryTab").hover(function(e){
-        e.preventDefault();
-        carousel.trigger('to.owl.carousel', 3);
-    });
-    $(".equestrianTab").hover(function(e){
-        e.preventDefault();
-        carousel.trigger('to.owl.carousel', 4);
-    });
-    $('.video-text-block .item').matchHeight();
-</script>
 </html>
