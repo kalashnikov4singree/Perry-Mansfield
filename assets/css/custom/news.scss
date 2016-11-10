@@ -1,24 +1,29 @@
-.item-new:not(:first-child) {
+
+.item-new {
   margin-top: 45px;
+}
+
+.item-new:first-child {
+  margin-top: 40px;
 }
 
 .item-new:last-child {
   margin-bottom: 80px;
 }
 
-article a:hover,
-article a:active,
-article a:link,
-article a:visited {
+.item-new a:hover,
+.item-new a:active,
+.item-new a:link,
+.item-new a:visited {
   text-decoration: none;
 }
 
-.title{
+.title {
   margin-bottom: 15px;
   margin-top: 0;
 }
 
-article a {
+.item-new a {
   color: #52523c;
   font-family: "Fira Sans";
   font-size: 24px;
@@ -26,7 +31,7 @@ article a {
   text-transform: uppercase;
 }
 
-article a:hover {
+.item-new a:hover {
   color: #118386;
 }
 
@@ -75,7 +80,7 @@ article a:hover {
   line-height: 24px;
 }
 
-.title-widget{
+.title-widget {
   margin: 0 0 18px 0;
   color: #009f9b;
   font-size: 24px;
@@ -83,30 +88,38 @@ article a:hover {
   text-transform: uppercase;
 }
 
-.widget ul{
+.widget ul {
   padding: 0;
   list-style-type: none;
 }
 
-.widget li{
+.widget li {
   margin-bottom: 18px;
-  color: #6d6d50;
-  font-size: 16px;
-  line-height: normal;
   position: relative;
   padding-left: 10px;
 }
 
-.widget span{
+.widget li a {
+  color: #6d6d50;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.widget li a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.widget span {
   color: #b6b6a7;
   font-size: 12px;
   display: block;
 }
 
-.widget li:before{
+.widget li:before {
   position: absolute;
   left: 0px;
-  top:5px;
+  top: 5px;
   font-family: FontAwesome;
   content: "\f054";
   color: #6d6d50;
@@ -228,11 +241,11 @@ article a:hover {
     display: none;
   }
 }
-@media only screen and (max-width: 599px) {
+@media(max-width: 599px) {
   .meta-data {
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .thumbnail-block {
     float: none;
@@ -246,8 +259,9 @@ article a:hover {
     padding: 0;
   }
 }
-@media only screen and (max-width: 359px) {
-  span.count-comments{
+
+@media(max-width: 359px) {
+  span.count-comments {
     display: block;
     float: none;
   }

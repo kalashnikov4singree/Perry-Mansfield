@@ -1,0 +1,95 @@
+.programs-block ul.nav-tabs li {
+  width: 360px;
+}
+
+.programs-block .arrow-open-close{
+  font-family: FontAwesome;
+  content: "\f078";
+}
+
+.programs-block ul.nav-tabs li.active {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid white;
+}
+
+.programs-block ul.nav-tabs {
+  margin-top: 80px;
+}
+
+.programs-block ul.nav-tabs li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.programs-block .nav li a {
+  border: 1px solid #b7b8a1;
+  border-radius: 0;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+  color: #17afb3;
+  margin: 0;
+  font-family: "Fira Sans";
+  font-size: 24px;
+  line-height: normal;
+}
+
+.programs-block ul.nav-tabs li.active a {
+  border: 1px solid #b7b8a1;
+  color: #118386;
+  border-bottom: none;
+}
+
+.programs-block .nav li a:hover {
+  background-color: #f4f4f4;
+}
+
+.programs-block ul.nav-tabs {
+  border-bottom: 1px solid #b7b8a1;
+}
+
+.programs-block .tab-content {
+  padding-top: 30px;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.programs-block .title-program {
+  text-transform: uppercase;
+  font-family: "Fira Sans";
+  font-size: 24px;
+  line-height: normal;
+  clear: both;
+  padding-top: 25px;
+  padding-bottom: 14px;
+}
+
+.programs-block .title-program a {
+  color: #52523c;
+}
+
+.programs-block .title-program a:hover,
+.programs-block .lear-more a:hover {
+  color: #118386;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.programs-block .content-program {
+  line-height: normal;
+  color: #52523c;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.programs-block .lear-more {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-family: "Fira Sans";
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.programs-block .lear-more a {
+  color: #6a892c;
+}

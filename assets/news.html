@@ -8,14 +8,9 @@
 </head>
 <body>
 //= template/header.html
-<div class="breadcrumbs-block">
-    <div class="container">
-        <ol class="breadcrumb">
-            <li><a href="/">Home</a></li>
-            <li class="active">News</li>
-        </ol>
-    </div>
-</div>
+//= template/breadcrumbs/breadcrumbs-before.html
+news
+//= template/breadcrumbs/breadcrumbs-after.html
 <div class="news-block">
     <div class="container">
         <div class="row">
@@ -99,32 +94,7 @@
                 </section>
             </div>
             <div class="col-sm-3">
-                <div class="sidebar">
-                    <div class="widget">
-                        <h3 class="title-widget">All Posts</h3>
-                        <ul>
-                            <li>2014</li>
-                            <li>2015</li>
-                            <li>2016</li>
-                        </ul>
-                    </div>
-                    <div class="widget">
-                        <h3 class="title-widget">Categories</h3>
-                        <ul>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                            <li>Lorem Ipsum</li>
-                        </ul>
-                    </div>
-                    <div class="widget">
-                        <h3 class="title-widget">Latest Posts</h3>
-                        <ul>
-                            <li>Rhythm Dance Company raises $2,000 for Best Buddies<span>2/3/2014</span></li>
-                            <li>Local children danced for Algonquin. Best Buddies<span>1/29/14</span></li>
-                            <li>Westborough Dancers Win Medals at Headliners Regional Competition<span></span></li>
-                        </ul>
-                    </div>
-                </div>
+                //= template/sidebar.html
             </div>
         </div>
     </div>
