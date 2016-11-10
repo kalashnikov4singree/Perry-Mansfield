@@ -3,18 +3,18 @@
   margin-top: 45px;
 }
 
-.item-new {
-  margin-top: 40px !important;
+.item-new:first-child {
+  margin-top: 40px;
 }
 
 .item-new:last-child {
   margin-bottom: 80px;
 }
 
-article a:hover,
-article a:active,
-article a:link,
-article a:visited {
+.item-new a:hover,
+.item-new a:active,
+.item-new a:link,
+.item-new a:visited {
   text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ article a:visited {
   margin-top: 0;
 }
 
-article a {
+.item-new a {
   color: #52523c;
   font-family: "Fira Sans";
   font-size: 24px;
@@ -31,7 +31,7 @@ article a {
   text-transform: uppercase;
 }
 
-article a:hover {
+.item-new a:hover {
   color: #118386;
 }
 
@@ -106,6 +106,7 @@ article a:hover {
 }
 
 .widget li a:hover {
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -125,12 +126,126 @@ article a:hover {
   font-size: 8px;
   text-transform: uppercase;
 }
-
-@media only screen and (max-width: 599px) {
+.news-block .article-content .title-article{
+  color: #8db73b;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+  margin-top: 33px;
+}
+.news-block .article-content .post-by{
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: #6d6d50;
+  margin-bottom: 10px;
+}
+.news-block .article-content .post-by a{
+  color: #118386;
+  text-decoration: none;
+}
+.news-block .article-content .count-comments{
+  font-size: 12px;
+  color: #118386;
+  margin-bottom: 20px;
+}
+.news-block .article-content .content-article{
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #6d6d50;
+  margin-bottom: 70px;
+}
+.news-block .article-content .content-article .pull-left{
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.news-block .article-content .content-article img{
+  max-width: 450px;
+  height: 349px;
+  object-fit: cover;
+}
+.news-block .article-content .content-article p{
+  margin-bottom: 30px;
+}
+.news-block .article-content .content-article a{
+  color: #8db73b;
+  font-weight: 700;
+}
+.news-block .article-content .article-next-prev{
+  margin-bottom: 43px;
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+.news-block .article-content .article-next-prev a{
+  color: #118386;
+  text-decoration: none;
+}
+.news-block .article-content .prev-article,
+.news-block .article-content .next-article{
+  width: 360px;
+  border-bottom: 3px solid #118386;
+  position: relative;
+  padding-bottom: 10px;
+}
+.news-block .article-content .prev-article .link-nav{
+  position: absolute;
+  left: 10px;
+  top:50%;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+.news-block .article-content .prev-article i{
+  margin-right: 15px;
+}
+.news-block .article-content  .prev-article .content-nav{
+  margin-left:103px;
+}
+.news-block .article-content .next-article .link-nav{
+  position: absolute;
+  right: 10px;
+  top:50%;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+.news-block .article-content .next-article i{
+  margin-left: 15px;
+}
+.news-block .article-content  .next-article .content-nav{
+  margin-right:103px;
+}
+@media(max-width: 1199px){
+  .news-block .article-content .prev-article,
+  .news-block .article-content .next-article {
+    width: 300px;
+  }
+}
+@media(max-width: 991px){
+  .news-block .article-content .prev-article,
+  .news-block .article-content .next-article {
+    width: 260px;
+  }
+  .news-block .article-content .content-article img{
+    width: 100%;
+    object-fit: inherit;
+    height: auto;
+    max-width: inherit;
+  }
+}
+@media(max-width: 767px){
+  .news-block .article-content .prev-article,
+  .news-block .article-content .next-article {
+    width: 140px;
+    height: 50px;
+  }
+  .news-block .article-content .prev-article .content-nav,
+  .news-block .article-content .next-article .content-nav{
+    display: none;
+  }
+}
+@media(max-width: 599px) {
   .meta-data {
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .thumbnail-block {
     float: none;
@@ -145,7 +260,7 @@ article a:hover {
   }
 }
 
-@media only screen and (max-width: 359px) {
+@media(max-width: 359px) {
   span.count-comments {
     display: block;
     float: none;

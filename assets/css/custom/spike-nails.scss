@@ -13,7 +13,7 @@ body{
   vertical-align: top;
 }
 .btn-perry{
-  background-color: #118386;
+  background-color: #7ab735;
   font-size: 24px;
   font-weight: 700;
   color: white;
@@ -22,7 +22,7 @@ body{
 .btn-perry:hover,
 .btn-perry:focus{
   color: #fff;
-  background-color: #7ab735;
+  background-color: #118386;
   box-shadow: none;
   outline: none;
 }
@@ -54,7 +54,6 @@ body{
 }
 .discover-program .content .block-btn .btn-perry:hover{
   color: #fff;
-  background-color: #7ab735;
 }
 .our-programs .left-side{
   width:65%;
@@ -133,7 +132,7 @@ body{
   border-radius: inherit;
   left: -28px;
   top: -33px;
-  padding: 15px 45px 15px 31px;
+  padding: 20px 45px 15px 31px;
   font-weight: 400;
 }
 .news-block .news .item{
@@ -239,16 +238,20 @@ body{
   color: #52523c;
   height: 32px;
   border-radius: inherit;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.video-text-block .newsletter-form .form-control:focus{
+  background: #fff;
 }
 .video-text-block .newsletter-form .btn-perry{
   height: 32px;
   font-size: 16px;
-  background-color: #443a4c;
+  background-color: #6f5e7a;
   font-weight: 400;
   text-transform: uppercase;
 }
 .video-text-block .newsletter-form .btn-perry:hover{
-  background-color: #6f5e7a;
+  background-color: #443a4c;
 }
 .our-story{
   background: url("../../assets/img/our-story-bg.jpg") no-repeat center;
