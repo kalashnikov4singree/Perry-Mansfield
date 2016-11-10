@@ -385,6 +385,124 @@ body{
   font-size: 18px;
   font-weight: 400;
 }
+.gallery-page  .item{
+  margin-bottom: 30px;
+  position: relative;
+}
+.gallery-page .item .img-block img{
+  width: 100%;
+}
+.caption {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-in-out;
+  -moz-transition: all 0.45s ease-in-out;
+  -o-transition: all 0.45s ease-in-out;
+  -ms-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.caption .blur {
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+}
+.gallery-page .item .caption-plus {
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 6;
+}
+.gallery-page .item:hover .caption{
+  opacity: 1;
+}
+.modal-gallery{
+  background: rgba(0,0,0,0.85);
+}
+.modal-gallery .modal-content{
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+.modal-gallery .modal-dialog{
+  width: 800px;
+  margin: 150px auto;
+}
+.modal-gallery .block-close .close{
+  float: none;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.modal-gallery .modal-body{
+  padding: 0;
+  position: relative;
+}
+.modal-gallery .modal-body .title-modal{
+  color: white;
+  font-size: 24px;
+  min-height: 43px;
+  margin-bottom:23px;
+  padding-right: 60px;
+  text-align: justify;
+  line-height: 43px;
+  font-family: "Open Sans", sans-serif;
+}
+.modal-gallery .modal-body .img-block img{
+  width: 100%;
+}
+.modal-gallery .site-text{
+  padding: 24px 34px 39px 24px;
+  background: #fff;
+  color: #464646;
+  font-size: 16px;
+}
+.modal-gallery .site-text .top{
+  float: left;
+  width: 100%;
+  border-top: 1px solid darkgrey;
+  padding-top:40px;
+  position: relative;
+}
+.modal-gallery .site-text .name{
+  margin-bottom: 20px;
+  color: #1e1e1e;
+  font-size: 24px;
+  padding-right: 90px;
+  font-family: MyriadProRegular;
+}
+.modal-gallery .site-text .site-link a{
+  position: absolute;
+  top:44px;
+  right: 0;
+  z-index: 2;
+  color: #900;
+  font-size: 18px;
+  text-decoration: none;
+}
+.modal-gallery  .modal-slider .owl-prev{
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  margin-top: -46px;
+}
+.modal-gallery  .modal-slider .owl-next{
+  position: absolute;
+  right: -70px;
+  top: 50%;
+  margin-top: -46px;
+}
 @media(max-width: 1199px){
   .discover-program{
     background-position-x:-250px ;
@@ -450,6 +568,13 @@ body{
     left: 0;
     right: 0;
     font-size: 18px;
+  }
+  .modal-gallery .modal-dialog{
+    width: auto;
+    margin: 100px 10px;
+  }
+  .modal-gallery .modal-dialog .owl-nav {
+    display: none;
   }
 }
 @media(max-width: 767px){
@@ -546,5 +671,8 @@ body{
   }
   .contact-us .bottom-form .btn-perry{
     font-size: 14px;
+  }
+  .modal-gallery .modal-body .title-modal{
+    font-size: 18px;
   }
 }
