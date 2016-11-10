@@ -2,18 +2,22 @@
   width: 360px;
 }
 
-.programs-block .arrow-open-close{
+.arrow-open-close:after {
   font-family: FontAwesome;
+  float: right;
+}
+
+.programs-block .arrow-open-close:after {
   content: "\f078";
+}
+
+.programs-block .active .arrow-open-close:after {
+  content: "\f077";
 }
 
 .programs-block ul.nav-tabs li.active {
   background-color: #f4f4f4;
   border-bottom: 1px solid white;
-}
-
-.programs-block ul.nav-tabs {
-  margin-top: 80px;
 }
 
 .programs-block ul.nav-tabs li:not(:last-child) {
@@ -39,7 +43,7 @@
   border-bottom: none;
 }
 
-.programs-block .nav li a:hover {
+.programs-block .nav li:not(.active) a:hover {
   background-color: #f4f4f4;
 }
 
@@ -61,6 +65,10 @@
   clear: both;
   padding-top: 25px;
   padding-bottom: 14px;
+}
+
+.programs-block .thumbnail-block img {
+  width: 100%;
 }
 
 .programs-block .title-program a {
@@ -92,4 +100,62 @@
 
 .programs-block .lear-more a {
   color: #6a892c;
+}
+
+@media(max-width: 991px) {
+  .programs-block ul.nav-tabs li {
+    width: 355px;
+  }
+}
+
+@media(max-width: 767px) {
+  .programs-block ul.nav-tabs li {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .programs-block ul.nav-tabs {
+    border: none;
+  }
+
+  .arrow-open-close:after {
+    display: none;
+  }
+  .programs-block ul.nav-tabs li a {
+    color:white;
+    background: #8db73b;
+    text-align: center;
+    border-color: #8db73b !important;
+  }
+  .programs-block ul.nav-tabs li.active a {
+    border: 1px solid #8db73b;
+    color:#118386;
+    background: #f4f4f4;
+  }
+  .programs-block ul.nav-tabs li.active {
+    border: none;
+  }
+  .programs-block .nav li a {
+    padding: 19px 0 16px;
+    font-size: 16px;
+  }
+  .programs-block .thumbnail-block img{
+    max-width: 360px;
+    margin: 0 auto;
+    display: block;
+  }
+  .programs-block .title-program{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .programs-block .lear-more{
+    padding-top: 20px;
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+
+  .programs-block .content-program{
+    display: none;
+  }
 }
