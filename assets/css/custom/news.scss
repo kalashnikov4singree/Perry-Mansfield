@@ -18,7 +18,7 @@
   text-decoration: none;
 }
 
-.title {
+.item-new .title {
   margin-bottom: 15px;
   margin-top: 0;
 }
@@ -80,7 +80,7 @@
   line-height: 24px;
 }
 
-.title-widget {
+.blog-block .title-widget {
   margin: 0 0 18px 0;
   color: #009f9b;
   font-size: 24px;
@@ -88,35 +88,35 @@
   text-transform: uppercase;
 }
 
-.widget ul {
+.sidebar .widget ul {
   padding: 0;
   list-style-type: none;
 }
 
-.widget li {
+.sidebar .widget li {
   margin-bottom: 18px;
   position: relative;
   padding-left: 10px;
 }
 
-.widget li a {
+.sidebar .widget li a {
   color: #6d6d50;
   font-size: 16px;
   line-height: normal;
 }
 
-.widget li a:hover {
+.sidebar .widget li a:hover {
   cursor: pointer;
   text-decoration: none;
 }
 
-.widget span {
+.sidebar .widget span {
   color: #b6b6a7;
   font-size: 12px;
   display: block;
 }
 
-.widget li:before {
+.sidebar .widget li:before {
   position: absolute;
   left: 0px;
   top: 5px;

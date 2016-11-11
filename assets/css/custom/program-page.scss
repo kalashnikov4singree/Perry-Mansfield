@@ -1,0 +1,156 @@
+.program-page-block .banner-program-page img{
+    width: 100%;
+}
+
+.program-page-block .program-title h1{
+    color: #8db73b;
+    font-family: "Fira Sans";
+    margin: 0;
+    line-height: normal;
+}
+
+.program-page-block .program-content,
+.program-page-block .left-sidebar{
+    margin-top: 60px;
+}
+
+.program-page-block .slogan{
+    color: #504f30;
+    font-family: "Myriad Pro";
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.program-page-block .content-text{
+    color: #52523c;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.program-page-block a.btn-register{
+    width: 165px;
+    text-align: center;
+    padding: 17px 0;
+    color: white;
+    background-color: #17afb3;
+    font-family: "Fira Sans";
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.program-page-block a.btn-register:hover {
+    background-color: #118386;
+}
+
+.program-page-block .title-widget{
+
+    color: #17afb3;
+    font-family: "Fira Sans";
+    font-size: 36px;
+    margin: 0;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.program-page-block .left-sidebar .navbar-toggle{
+    float: left;
+    border-color: #c6db9d;
+    background: #f4f4f4;
+    padding: 6px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.program-page-block .left-sidebar .navbar-toggle .icon-bar{
+    background: #8db73b;
+}
+
+.program-page-block .left-sidebar .navbar-nav{
+    width: 100%;
+}
+
+.program-page-block .left-sidebar .navbar-nav>li{
+    float: none;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.program-page-block .left-sidebar .navbar-nav li a{
+    color:#6d6d50;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    line-height: normal;
+    padding: 0;
+}
+
+.program-page-block .left-sidebar .navbar-nav li.active a,
+.program-page-block .left-sidebar .navbar-nav li:hover a{
+    color: #118386;
+    background: transparent;
+}
+
+@media (max-width: 1199px){
+    .program-page-block .title-widget {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .program-page-inner-container{
+        position: relative;
+        width: 100%;
+    }
+    .program-page-block .left-sidebar{
+        margin-top: 0px;
+        position: absolute;
+        width: 100%;
+        z-index: 9998;
+        left: 0;
+        top:0;
+    }
+
+    .program-page-block .left-sidebar .navbar{
+        border: none;
+    }
+
+    .program-page-block  .left-sidebar .navbar-header{
+        background-color: #17afb3;
+    }
+
+    .program-page-block  .left-sidebar .container-widget{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .program-page-block .left-sidebar .navbar-collapse{
+        border-color: #118386;
+        background-color: #0fa7ab;
+    }
+
+    .program-page-block  .left-sidebar .navbar-nav{
+        margin: 0;
+    }
+
+    .program-page-block .title-widget {
+        color: white;
+        font-family: "Fira Sans";
+        padding: 11px 0 12px;
+        font-size: 16px;
+    }
+    .program-page-block .left-sidebar .navbar-nav>li{
+        border-color: #00898c;
+    }
+
+    .program-page-block .slogan{
+        display: none;
+    }
+    .program-page-block a.btn-register{
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
