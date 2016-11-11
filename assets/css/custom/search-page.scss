@@ -1,58 +1,94 @@
-.breadcrumbs-block{
-    background-color: #f4f4f4;
-    padding: 45px 0;
-    margin-bottom: 80px;
+.breadcrumbs-block {
+  background-color: #f4f4f4;
+  padding: 45px 0;
+  margin-bottom: 80px;
 }
-.breadcrumbs-block .breadcrumb{
-    padding: 0;
-    font-family: "Open Sans";
-    font-size: 14px;
+
+.breadcrumbs-block .breadcrumb {
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.breadcrumbs-block .breadcrumb a,
+.breadcrumbs-block .breadcrumb {
+  color: #6d6d50;
+}
+
+.breadcrumbs-block .breadcrumb > li + li:before {
+  background: url('../../build/img/dot.png') no-repeat center center;
+  content: ' ';
+  color: #6d6d50;
+  padding: 0 10px;
+}
+
+.search-result-block {
+  margin-top: 80px;
+  min-height: 540px;
+}
+
+.page-name h1 {
+  margin: 0;
+  color: #17afb3;
+  font-size: 36px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.search-word {
+  margin-top: 45px;
+  color: #118386;
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+  display: block;
+}
+
+.items-search-element{
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.items-search-element li {
+  margin-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.items-search-element li a {
+  color: #7ab735;
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.items-search-element a:hover {
+  color: #118386;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media(max-width: 767px) {
+  .search-result-block {
+    margin-top: 0;
+  }
+
+  .breadcrumbs-block {
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+  .breadcrumbs-block li:not(.active),
+  .breadcrumbs-block li:before{
+    display: none !important;
+  }
+
+  .breadcrumbs-block li.active{
     line-height: normal;
-    text-transform: uppercase;
-    background-color: transparent;
-    margin-bottom: 0;
-}
-
-.breadcrumbs-block .breadcrumb a{
-    color: #6d6d50;
-}
-
-.breadcrumbs-block .breadcrumb>li+li:before{
-    background: url('../../build/img/dot.png') no-repeat center center;
-    content: ' ';
-    color: #6d6d50;
-    padding: 0 10px;
-}
-
-.search-result-block{
-    margin-top: 79px;
-    min-height: 540px;
-}
-
-.page-name h1{
-    margin: 0;
-    color: #17afb3;
-    font-size: 36px;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.search-word{
-    margin-top: 45px;
-    color: #118386;
-    font-size: 24px;
-    line-height: normal;
-    text-transform: uppercase;
-    display: block;
-}
-
-.item-search-element{
-    margin-top: 40px;
-}
-
-.item-search-element span{
-    color: #7ab735;
-    font-size: 24px;
-    line-height: normal;
-    text-transform: uppercase;
+    font-size: 18px;
+  }
 }
